@@ -1,0 +1,12 @@
+langgraph
+langchain
+langchain-google-vertexai
+langchain-google-community
+langchain-openai
+pydantic
+python-dotenv
+tavily-python
+google-search-results
+langsmith
+chainlit
+python-docx
