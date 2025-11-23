@@ -1,0 +1,185 @@
+2025-11-23 15:39:44,568 - deep_research_agent - INFO - Chat session started
+2025-11-23 15:40:04,395 - deep_research_agent - INFO - Settings updated: {'researcher_model': 'gpt-4o', 'analyst_model': 'gpt-4o'}
+2025-11-23 15:40:10,437 - deep_research_agent - INFO - Received message: Hi there 
+2025-11-23 15:40:26,010 - deep_research_agent - INFO - Received message: can you look into Michelle obama
+2025-11-23 15:40:26,582 - deep_research_agent - INFO - Starting research on topic: Michelle Obama
+2025-11-23 15:40:26,613 - deep_research_agent - INFO - Researcher Node: Using model 'gpt-4o'
+2025-11-23 15:40:26,627 - deep_research_agent - INFO - Researcher Node: Iteration 0 for topic 'Michelle Obama'
+2025-11-23 15:40:28,192 - deep_research_agent - INFO - Tools Node: Processing 4 tool calls
+2025-11-23 15:40:28,193 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Michelle Obama biography career history education known associates'}
+2025-11-23 15:40:29,379 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Michelle Obama business holdings investments financial status'}
+2025-11-23 15:40:29,853 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Michelle Obama lawsuits regulatory actions criminal records'}
+2025-11-23 15:40:30,312 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Michelle Obama public controversies statements reputation'}
+2025-11-23 15:40:30,599 - deep_research_agent - INFO - Researcher Node: Using model 'gpt-4o'
+2025-11-23 15:40:30,611 - deep_research_agent - INFO - Researcher Node: Iteration 1 for topic 'Michelle Obama'
+2025-11-23 15:40:32,300 - deep_research_agent - INFO - Tools Node: Processing 4 tool calls
+2025-11-23 15:40:32,301 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Michelle Obama career history education known associates'}
+2025-11-23 15:40:33,214 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Michelle Obama financial status business holdings investments'}
+2025-11-23 15:40:33,649 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Michelle Obama legal issues lawsuits regulatory actions'}
+2025-11-23 15:40:34,058 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Michelle Obama public controversies statements reputation'}
+2025-11-23 15:40:34,420 - deep_research_agent - INFO - Researcher Node: Using model 'gpt-4o'
+2025-11-23 15:40:34,434 - deep_research_agent - INFO - Researcher Node: Iteration 2 for topic 'Michelle Obama'
+2025-11-23 15:40:35,971 - deep_research_agent - INFO - Tools Node: Processing 4 tool calls
+2025-11-23 15:40:35,972 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Michelle Obama career history education known associates'}
+2025-11-23 15:40:37,009 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Michelle Obama financial status business holdings investments'}
+2025-11-23 15:40:37,271 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Michelle Obama legal issues lawsuits regulatory actions'}
+2025-11-23 15:40:37,770 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Michelle Obama public controversies statements reputation'}
+2025-11-23 15:40:38,085 - deep_research_agent - INFO - Researcher Node: Using model 'gpt-4o'
+2025-11-23 15:40:38,096 - deep_research_agent - INFO - Researcher Node: Iteration 3 for topic 'Michelle Obama'
+2025-11-23 15:40:39,157 - deep_research_agent - INFO - Tools Node: Processing 3 tool calls
+2025-11-23 15:40:39,158 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Michelle Obama financial status business holdings investments 2023'}
+2025-11-23 15:40:40,129 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Michelle Obama legal issues lawsuits regulatory actions 2023'}
+2025-11-23 15:40:40,444 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Michelle Obama public controversies statements reputation 2023'}
+2025-11-23 15:40:40,941 - deep_research_agent - INFO - Researcher Node: Using model 'gpt-4o'
+2025-11-23 15:40:40,941 - deep_research_agent - INFO - Researcher Node: Iteration limit reached. Forcing summary.
+2025-11-23 15:40:48,539 - deep_research_agent - INFO - Analyst Node: Using model 'gpt-4o'
+2025-11-23 15:40:48,541 - deep_research_agent - INFO - Analyst Node: Analyzing 15 findings for 'Michelle Obama'
+2025-11-23 15:40:56,851 - deep_research_agent - INFO - Analyst Node: Report generated successfully
+2025-11-23 15:40:56,852 - deep_research_agent - INFO - Analyst Node: Parsing report for Risk Score. Tail:
+ews/magazine-19431000).
+
+**Final Risk Score: 1**
+
+#### KEY_FACTS:
+```json
+[
+  "Michelle LaVaughn Robinson Obama was born on January 17, 1964, in Chicago, Illinois.",
+  "She served as the First Lady of the United States from 2009 to 2017.",
+  "Michelle Obama worked at the law firm Sidley & Austin.",
+  "She launched a food company, PLEZi Nutrition, in 2023.",
+  "Michelle Obama is associated with the Obama Foundation.",
+  "She has been involved in initiatives focused on education and health."
+]
+```
+2025-11-23 15:40:56,854 - deep_research_agent - INFO - Analyst Node: Matched pattern 'Risk Score.*?:?\s*(\d+(\.\d+)?)'
+2025-11-23 15:40:56,855 - deep_research_agent - INFO - Analyst Node: Extracted Risk Score: 1.0
+2025-11-23 15:40:56,856 - deep_research_agent - WARNING - Analyst Node: No KEY_FACTS found in report.
+2025-11-23 15:40:56,865 - deep_research_agent - INFO - Reviewer Node: Using model 'gpt-4o'
+2025-11-23 15:40:56,866 - deep_research_agent - WARNING - Reviewer Node: Used GPT, truncating to 20k chars.
+2025-11-23 15:40:59,135 - deep_research_agent - INFO - Reviewer Decision: DECISION: APPROVE
+FEEDBACK: Looks good. The report on Michelle Obama is well-supported by the findings. All claims made in the report are backed by the provided sources, and the risk score of 1.0 is justified given the lack of significant negative findings or legal issues. The report is complete and answers the user's research topic comprehensively.
+2025-11-23 15:40:59,152 - deep_research_agent - INFO - Report saved to reports\Michelle_Obama\risk_assessment.md
+2025-11-23 15:41:48,285 - deep_research_agent - INFO - Settings updated: {'researcher_model': 'gemini-2.5-flash', 'analyst_model': 'gemini-2.5-flash'}
+2025-11-23 15:42:10,098 - deep_research_agent - INFO - Received message: now can check on the Mary Barra ?
+2025-11-23 15:42:12,286 - deep_research_agent - INFO - Starting research on topic: Mary Barra
+2025-11-23 15:42:12,310 - deep_research_agent - INFO - Researcher Node: Using model 'gemini-2.5-flash'
+2025-11-23 15:42:12,322 - deep_research_agent - INFO - Researcher Node: Iteration 0 for topic 'Mary Barra'
+2025-11-23 15:42:15,003 - deep_research_agent - INFO - Tools Node: Processing 1 tool calls
+2025-11-23 15:42:15,003 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Mary Barra biography career'}
+2025-11-23 15:42:15,817 - deep_research_agent - INFO - Researcher Node: Using model 'gemini-2.5-flash'
+2025-11-23 15:42:15,828 - deep_research_agent - INFO - Researcher Node: Iteration 1 for topic 'Mary Barra'
+2025-11-23 15:42:19,436 - deep_research_agent - INFO - Tools Node: Processing 3 tool calls
+2025-11-23 15:42:19,437 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Mary Barra net worth investments business holdings'}
+2025-11-23 15:42:20,363 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Mary Barra lawsuits regulatory actions'}
+2025-11-23 15:42:20,625 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Mary Barra controversies public statements reputation'}
+2025-11-23 15:42:21,150 - deep_research_agent - INFO - Researcher Node: Using model 'gemini-2.5-flash'
+2025-11-23 15:42:21,170 - deep_research_agent - INFO - Researcher Node: Iteration 2 for topic 'Mary Barra'
+2025-11-23 15:42:24,607 - deep_research_agent - INFO - Tools Node: Processing 6 tool calls
+2025-11-23 15:42:24,607 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Mary Barra early career education details'}
+2025-11-23 15:42:25,601 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Mary Barra personal investments outside GM'}
+2025-11-23 15:42:25,903 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Mary Barra bankruptcies fraud allegations personal'}
+2025-11-23 15:42:26,281 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Mary Barra involvement GM transmission lawsuit'}
+2025-11-23 15:42:26,676 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Mary Barra personal lawsuits regulatory actions'}
+2025-11-23 15:42:27,147 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Mary Barra public reputation leadership style criticism'}
+2025-11-23 15:42:27,573 - deep_research_agent - INFO - Researcher Node: Using model 'gemini-2.5-flash'
+2025-11-23 15:42:27,586 - deep_research_agent - INFO - Researcher Node: Iteration 3 for topic 'Mary Barra'
+2025-11-23 15:42:35,415 - deep_research_agent - INFO - Tools Node: Processing 3 tool calls
+2025-11-23 15:42:35,416 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Mary Barra personal fraud allegations bankruptcy lawsuits'}
+2025-11-23 15:42:36,274 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Mary Barra personal investments portfolio outside GM'}
+2025-11-23 15:42:36,718 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Mary Barra board memberships affiliations outside General Motors'}
+2025-11-23 15:42:37,143 - deep_research_agent - INFO - Researcher Node: Using model 'gemini-2.5-flash'
+2025-11-23 15:42:37,144 - deep_research_agent - INFO - Researcher Node: Iteration limit reached. Forcing summary.
+2025-11-23 15:42:47,875 - deep_research_agent - INFO - Analyst Node: Using model 'gemini-2.5-flash'
+2025-11-23 15:42:47,875 - deep_research_agent - INFO - Analyst Node: Analyzing 13 findings for 'Mary Barra'
+2025-11-23 15:43:24,545 - deep_research_agent - INFO - Analyst Node: Report generated successfully
+2025-11-23 15:43:24,545 - deep_research_agent - INFO - Analyst Node: Parsing report for Risk Score. Tail:
+ "She oversaw GM during the major ignition switch recall crisis in 2014, which led to congressional testimony [NYT](https://www.nytimes.com/2014/06/04/business/gm-officials-say-they-expect-mary-barra-will-be-cleared-of-wrongdoing.html).", "GM has faced ongoing 'transmission woes' and related public outrage during her tenure [Deadline Detroit](https://www.deadlinedetroit.com/articles/32644/starkman_gm_s_mounting_and_massive_transmission_woes_sparks_online_outrage_as_barra_dodges_legal_bullet/)."]
+2025-11-23 15:43:24,546 - deep_research_agent - INFO - Analyst Node: Matched pattern 'Risk Score.*?:?\s*(\d+(\.\d+)?)'
+2025-11-23 15:43:24,547 - deep_research_agent - INFO - Analyst Node: Extracted Risk Score: 7.0
+2025-11-23 15:43:24,548 - deep_research_agent - ERROR - Analyst Node: Error parsing KEY_FACTS: Unterminated string starting at: line 1 column 2 (char 1)
+2025-11-23 15:43:24,554 - deep_research_agent - INFO - Reviewer Node: Using model 'gemini-2.5-flash'
+2025-11-23 15:43:24,554 - deep_research_agent - INFO - Reviewer Node : Used Gemini no truncation 
+2025-11-23 15:43:41,660 - deep_research_agent - INFO - Reviewer Decision: DECISION: APPROVE
+
+FEEDBACK: Looks good. The report is comprehensive, well-structured, and all claims are thoroughly supported by the provided findings. The source verification is robust, and the risk score justification, while making a nuanced interpretation regarding "unethical behavior" in the context of corporate actions, is adequately supported by the direct naming in a shareholder lawsuit and leadership during major corporate crises. No hallucinations or significant inconsistencies were found.
+2025-11-23 15:43:41,674 - deep_research_agent - INFO - Report saved to reports\Mary_Barra\risk_assessment.md
+2025-11-23 15:46:12,166 - deep_research_agent - INFO - Received message: Satya Narayana 
+2025-11-23 15:46:12,963 - deep_research_agent - INFO - Starting research on topic: Satya Narayana
+2025-11-23 15:46:12,988 - deep_research_agent - INFO - Researcher Node: Using model 'gemini-2.5-flash'
+2025-11-23 15:46:12,998 - deep_research_agent - INFO - Researcher Node: Iteration 0 for topic 'Satya Narayana'
+2025-11-23 15:46:14,472 - deep_research_agent - INFO - Tools Node: Processing 1 tool calls
+2025-11-23 15:46:14,472 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Satya Narayana'}
+2025-11-23 15:46:15,318 - deep_research_agent - INFO - Researcher Node: Using model 'gemini-2.5-flash'
+2025-11-23 15:46:15,331 - deep_research_agent - INFO - Researcher Node: Iteration 1 for topic 'Satya Narayana'
+2025-11-23 15:46:18,302 - deep_research_agent - INFO - Tools Node: Processing 4 tool calls
+2025-11-23 15:46:18,308 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Satya Nadella career history education'}
+2025-11-23 15:46:19,052 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Satya Nadella net worth investments business holdings'}
+2025-11-23 15:46:19,383 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Satya Nadella lawsuits regulatory actions criminal records'}
+2025-11-23 15:46:19,683 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Satya Nadella controversies public statements reputation'}
+2025-11-23 15:46:20,110 - deep_research_agent - INFO - Researcher Node: Using model 'gemini-2.5-flash'
+2025-11-23 15:46:20,131 - deep_research_agent - INFO - Researcher Node: Iteration 2 for topic 'Satya Narayana'
+2025-11-23 15:46:26,513 - deep_research_agent - INFO - Tools Node: Processing 4 tool calls
+2025-11-23 15:46:26,513 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Satya Nadella early career Microsoft roles'}
+2025-11-23 15:46:27,373 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Satya Nadella personal investments list'}
+2025-11-23 15:46:27,723 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Satya Nadella personal controversies criticisms'}
+2025-11-23 15:46:28,053 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Satya Nadella testimony lawsuits'}
+2025-11-23 15:46:28,443 - deep_research_agent - INFO - Researcher Node: Using model 'gemini-2.5-flash'
+2025-11-23 15:46:28,455 - deep_research_agent - INFO - Researcher Node: Iteration 3 for topic 'Satya Narayana'
+2025-11-23 15:46:34,191 - deep_research_agent - INFO - Tools Node: Processing 2 tool calls
+2025-11-23 15:46:34,193 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Satya Nadella personal investment portfolio'}
+2025-11-23 15:46:35,063 - deep_research_agent - INFO - Executing Google Search: {'__arg1': 'Satya Nadella fraud allegations bankruptcies criminal records'}
+2025-11-23 15:46:35,389 - deep_research_agent - INFO - Researcher Node: Using model 'gemini-2.5-flash'
+2025-11-23 15:46:35,389 - deep_research_agent - INFO - Researcher Node: Iteration limit reached. Forcing summary.
+2025-11-23 15:46:47,564 - deep_research_agent - INFO - Analyst Node: Using model 'gemini-2.5-flash'
+2025-11-23 15:46:47,566 - deep_research_agent - INFO - Analyst Node: Analyzing 11 findings for 'Satya Narayana'
+2025-11-23 15:47:20,143 - deep_research_agent - INFO - Analyst Node: Report generated successfully
+2025-11-23 15:47:20,145 - deep_research_agent - INFO - Analyst Node: Parsing report for Risk Score. Tail:
+adella/__lQ_XlXSqrZ7K8eaou5pWUurCWbAbzuQBDoiKfThnma0).", "Nadella testified in the US Justice Department's antitrust lawsuit against Google, criticizing Google's market dominance in search [Axios](https://www.axios.com/2023/10/03/microsoft-nadella-google-trial-search).", "He is recognized for ethical leadership and a focus on empowering individuals and organizations [ReputationX](https://blog.reputationx.com/investor-confidence-strategies), [LinkedIn](https://www.linkedin.com/in/satyanadella)."]
+2025-11-23 15:47:20,145 - deep_research_agent - INFO - Analyst Node: Matched pattern 'Risk Score.*?:?\s*(\d+(\.\d+)?)'
+2025-11-23 15:47:20,145 - deep_research_agent - INFO - Analyst Node: Extracted Risk Score: 1.0
+2025-11-23 15:47:20,145 - deep_research_agent - WARNING - Analyst Node: No KEY_FACTS found in report.
+2025-11-23 15:47:20,150 - deep_research_agent - INFO - Reviewer Node: Using model 'gemini-2.5-flash'
+2025-11-23 15:47:20,151 - deep_research_agent - INFO - Reviewer Node : Used Gemini no truncation 
+2025-11-23 15:47:34,273 - deep_research_agent - INFO - Reviewer Decision: DECISION: REJECT
+FEEDBACK: The report is generally well-structured and comprehensive, with a justified low-risk score. However, there is one specific claim in the "Deep Fact Extraction" section that is not explicitly supported by the provided findings snippets, which constitutes a hallucination based on the strict evaluation criteria.
+
+**Specific Issue:**
+1.  **Hallucination/Unverified Claim**: Under "1. Deep Fact Extraction" -> "Biographical details" -> "Education", the claim "Bachelor of Engineering in Electrical Engineering from Manipal Institute of Technology [Britannica Money]" is not explicitly supported by the provided snippet from Britannica Money. The snippet only mentions his Master's degree from the University of Wisconsin at Milwaukee. While this is a commonly known fact about Satya Nadella, for a strict QC review against *provided findings*, it must be verifiable within those findings.
+
+**Action Required:**
+*   Please either remove the claim about the Bachelor's degree from Manipal Institute of Technology or provide a finding snippet that explicitly supports it from the cited source (Britannica Money) or another provided source. If no such snippet exists in the provided findings, the claim must be removed.
+2025-11-23 15:47:34,289 - deep_research_agent - INFO - Analyst Node: Using model 'gemini-2.5-flash'
+2025-11-23 15:47:34,289 - deep_research_agent - INFO - Analyst Node: Analyzing 11 findings for 'Satya Narayana'
+2025-11-23 15:48:07,874 - deep_research_agent - INFO - Analyst Node: Report generated successfully
+2025-11-23 15:48:07,874 - deep_research_agent - INFO - Analyst Node: Parsing report for Risk Score. Tail:
+adella/__lQ_XlXSqrZ7K8eaou5pWUurCWbAbzuQBDoiKfThnma0).", "Nadella testified in the US Justice Department's antitrust lawsuit against Google, criticizing Google's market dominance in search [Axios](https://www.axios.com/2023/10/03/microsoft-nadella-google-trial-search).", "He is recognized for ethical leadership and a focus on empowering individuals and organizations [ReputationX](https://blog.reputationx.com/investor-confidence-strategies), [LinkedIn](https://www.linkedin.com/in/satyanadella)."]
+2025-11-23 15:48:07,874 - deep_research_agent - INFO - Analyst Node: Matched pattern 'Risk Score.*?:?\s*(\d+(\.\d+)?)'
+2025-11-23 15:48:07,874 - deep_research_agent - INFO - Analyst Node: Extracted Risk Score: 1.0
+2025-11-23 15:48:07,874 - deep_research_agent - WARNING - Analyst Node: No KEY_FACTS found in report.
+2025-11-23 15:48:07,890 - deep_research_agent - INFO - Reviewer Node: Using model 'gemini-2.5-flash'
+2025-11-23 15:48:07,890 - deep_research_agent - INFO - Reviewer Node : Used Gemini no truncation 
+2025-11-23 15:48:29,804 - deep_research_agent - INFO - Reviewer Decision: DECISION: REJECT
+FEEDBACK: The report is well-structured and largely accurate, but there are two instances where claims are not explicitly supported by the provided findings snippets, or are an inference rather than a direct statement.
+
+1.  **Hallucination/Source Verification Issue (Deep Fact Extraction - Education)**:
+    *   **Claim**: "Bachelor of Engineering in Electrical Engineering from Manipal Institute of Technology [Britannica Money](https://www.britannica.com/money/Satya-Nadella)"
+    *   **Finding**: The `Britannica Money` snippet provided in the findings (`"After moving to the United States, he completed (1990) a master's degree in computer science at the University of Wisconsin at Milwaukee and went to work at Sun..."`) does not mention his Bachelor's degree from Manipal Institute of Technology or Electrical Engineering. While this information might be on the full Britannica page or Wikipedia, the report specifically cites Britannica Money, and the provided snippet does not support the claim.
+
+2.  **Source Verification Issue (Deep Fact Extraction - Behavioral Patterns)**:
+    *   **Claim**: "Supports Diversity, Equity, and Inclusion (DEI) programs within Microsoft [NYT Business](https://www.nytimes.com/2025/01/22/business/dei-programs-initiatives-costco-microsoft.html)"
+    *   **Finding**: The `NYT Business` snippet (`"In October, Satya Nadella, the chief executive of Microsoft..."`) mentions Nadella in the context of DEI programs but does not explicitly state that he *supports* them. It's an inference based on the article's broader topic, not a direct statement from the provided text.
+
+Please ensure all claims are directly verifiable from the provided findings snippets.
+2025-11-23 15:48:29,811 - deep_research_agent - INFO - Analyst Node: Using model 'gemini-2.5-flash'
+2025-11-23 15:48:29,812 - deep_research_agent - INFO - Analyst Node: Analyzing 11 findings for 'Satya Narayana'
+2025-11-23 15:49:12,910 - deep_research_agent - INFO - Analyst Node: Report generated successfully
+2025-11-23 15:49:12,910 - deep_research_agent - INFO - Analyst Node: Parsing report for Risk Score. Tail:
+er-co-founder-arrested-on-fraud-charges/articleshow/119999552.cms).", "Microsoft products under his leadership have faced some controversies, such as questioned quantum computing breakthroughs and privacy concerns over the 'Recall' feature [Fortune](https://fortune.com/2025/02/20/microsoft-quantum-computing-breakthrough-questioned-by-experts/), [doublepulsar.com](https://doublepulsar.com/recall-stealing-everything-youve-ever-typed-or-viewed-on-your-own-windows-pc-is-now-possible-da3e12e9465e)."]
+2025-11-23 15:49:12,910 - deep_research_agent - INFO - Analyst Node: Matched pattern 'Risk Score.*?:?\s*(\d+(\.\d+)?)'
+2025-11-23 15:49:12,910 - deep_research_agent - INFO - Analyst Node: Extracted Risk Score: 3.0
+2025-11-23 15:49:12,910 - deep_research_agent - ERROR - Analyst Node: Error parsing KEY_FACTS: Unterminated string starting at: line 1 column 2 (char 1)
+2025-11-23 15:49:12,918 - deep_research_agent - INFO - Reviewer Node: Using model 'gemini-2.5-flash'
+2025-11-23 15:49:12,918 - deep_research_agent - INFO - Reviewer Node : Used Gemini no truncation 
+2025-11-23 15:49:30,244 - deep_research_agent - INFO - Reviewer Decision: DECISION: APPROVE
+FEEDBACK: Looks good. The report is comprehensive, well-structured, and all claims are accurately supported by the provided findings. The distinction between personal and corporate issues is clear, and the risk score justification is logical and consistent with the presented evidence. No hallucinations or significant inconsistencies were found.
+2025-11-23 15:49:30,260 - deep_research_agent - INFO - Report saved to reports\Satya_Narayana\risk_assessment.md
