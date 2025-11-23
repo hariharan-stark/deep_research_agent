@@ -1,6 +1,5 @@
 # Risk Assessment: Michelle Obama
 
-**Date**: C:\Users\harih\Mine\CS\python\assignments\deep_research_agent_elile\reports\Michelle_Obama\risk_assessment.md
 **Risk Score**: 1.0/10
 
 ### Intelligence Report: Michelle Obama

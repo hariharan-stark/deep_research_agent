@@ -1,6 +1,5 @@
 # Risk Assessment: Mary Barra
 
-**Date**: C:\Users\harih\Mine\CS\python\assignments\deep_research_agent_elile\reports\Mary_Barra\risk_assessment.md
 **Risk Score**: 7.0/10
 
 ## Intelligence Report: Mary Barra

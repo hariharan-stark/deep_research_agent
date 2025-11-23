@@ -1,6 +1,5 @@
 # Risk Assessment: Satya Narayana
 
-**Date**: C:\Users\harih\Mine\CS\python\assignments\deep_research_agent_elile\reports\Satya_Narayana\risk_assessment.md
 **Risk Score**: 3.0/10
 
 ## Intelligence Report: Satya Narayana Nadella

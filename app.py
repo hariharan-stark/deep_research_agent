@@ -186,7 +186,6 @@ async def main(message: cl.Message):
                     file_path = os.path.join(report_dir, "risk_assessment.md")
                     with open(file_path, "w", encoding="utf-8") as f:
                         f.write(f"# Risk Assessment: {topic}\n\n")
-                        f.write(f"**Date**: {os.path.abspath(file_path)}\n") # Placeholder for date or just path
                         f.write(f"**Risk Score**: {final_risk_score}/10\n\n")
                         f.write(final_report)
                     
