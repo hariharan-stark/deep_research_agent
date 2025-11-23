@@ -96,14 +96,13 @@ src/
 ├── tools/           # Tool definitions
 │   └── search.py
 ├── utils/           # Helpers (logging, etc.)
-├── app.py           # Chainlit application (Entry Point)
 ├── config.py        # Environment & Configuration
 ├── graph.py         # LangGraph definition
 └── state.py         # State schema
+└app.py           # Chainlit application (Entry Point)
 ```
 
 ## 5. Future Improvements
 
 - **Parallel Search**: Update the Researcher to generate multiple queries that can be executed in parallel batches.
-- **Document Parsing**: Add a tool to scrape and parse full web pages (not just snippets) for deeper analysis.
-- **Vector Memory**: Implement a vector database (e.g., Pinecone, Chroma) to store findings for long-term memory across different sessions.
+- **Vector Memory**: Implement a vector database (e.g., Pinecone, Chroma) to store findings for long-term memory across different sessions and also more context engineering.
